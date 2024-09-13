@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.example.electronwebcamrecorder
+productName: Recorder
+files:
+  - filter:
+      - main.js
+      - index.html
+      - renderer.js
+      - preload.js
+win:
+  target: nsis
+  icon: build/icon.ico
+mac:
+  target: dmg
+  icon: build/icon.icns
+linux:
+  target: AppImage
+  icon: build/icon.png
+electronVersion: 32.0.1
